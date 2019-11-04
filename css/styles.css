@@ -38,21 +38,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.getUp {
+    display: none;
+}
+
+
+
 /* ----------------------- Header ------------------------------------*/
 .main-header {
     width: 100%;
 }
 
 .logo {
-    font-size: 1.8em;
-    color: #de423a;
-    padding: 10px;
-    font-family: 'Mogra', cursive;
-    font-weight: 100;
+    display: flex;
+    width: 100px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.logo-link {
+    display: flex;
 }
 
 .main-header__contacInfo__phone {
-    background: #de423a;
+    background: #ed1b24;
     color: #fff;
     margin: 0 auto;
     padding: 10px;
@@ -68,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
     top: 2px;
     right: 5px;
 }
+
+
+
+
 
 /* ---------------------- Menu Styles --------------------------- */
 .main-nav {
@@ -124,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     height: 0;
     overflow: hidden;
-    transition: height 0.3s linear;
+    transition: height 0.4s linear;
 }
 
 .menu__link {
@@ -136,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__link:hover {
-    background: #de423a;
+    background: #ed1b24;
     color: #000;
     font-weight: bold;
 }
 
 .active {
-    background: #de423a;
+    background: #ed1b24;
 }
 
 .getMenu {
@@ -151,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------------------ Banner Styles --------------------------- */
 .banner {
-    margin-top: -55px;
     position: relative;
 }
 
@@ -187,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------- Principal Styles --------------------*/
 
 .group--color .container {
-    background: #de423a;
+    background: #ed1b24;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -212,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     text-align: center;
     text-decoration: none;
-    background: #de423a;
+    background: #ed1b24;
     color: #fff;
     width: 120px;
     padding: 10px;
@@ -245,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .today-special__price {
     font-size: 1.5em;
-    color: #de423a;
+    color: #ed1b24;
     font-weight: bold;
 }
 
@@ -256,6 +268,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     padding: 20px 10px;
     font-size: .8em;
+}
+
+.main-footer .colum__title {
+    font-size: 1.3em;
+    color: #ed1b24;
 }
 
 .copy {
@@ -273,6 +290,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: 3px;
     right: 5px;
+}
+
+.cj {
+    font-size: 1.2em;
+    color: #ed1b24;
 }
 
 
@@ -304,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .banner {
-        margin-top: -150px;
+        margin-top: -230px;
         z-index: -1000;
     }
 
@@ -396,8 +418,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .logo {
-        font-size: 2em;
-        padding: 0;
+        width: 200px;
+        margin-left: -20px;
+        margin-top: -30px;
     }
 
     .main-header__contacInfo__phone,
@@ -408,6 +431,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .main-nav {
         padding: 0;
+        position: sticky;
+        top: 0;
     }
 
     .icon-menu {
